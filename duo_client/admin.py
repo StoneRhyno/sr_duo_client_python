@@ -2882,6 +2882,8 @@ class Admin(client.Client):
             params['password_change_required'] = password_change_required
         if status is not None:
             params['status'] = status
+        if role is not None:
+            params['role'] = role
         response = self.json_api_call('POST', path, params)
         return response
 
