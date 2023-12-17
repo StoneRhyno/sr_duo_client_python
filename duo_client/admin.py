@@ -2866,6 +2866,7 @@ class Admin(client.Client):
         password - Deprecated; ignored if specified.
         password_change_required - <bool|None:Whether admin is required to change their password at next login> (optional)
         status - the status of the administrator (optional) - NOTE: Valid values are "Active" and "Disabled" - "Disabled" NOT valid for administrators with role - Owner
+        role - the role of the administrator (optional) - NOTE: The role names are case-sensitive. Must be one of: "Owner", "Administrator", "Application Manager", "User Manager", "Help Desk", "Billing", "Phishing Manager", or "Read-only".
 
         Returns the updated administrator.  See the adminapi docs.
 
