@@ -2855,6 +2855,7 @@ class Admin(client.Client):
                      password=None,
                      password_change_required=None,
                      status=None,
+                     role=None,
                      ):
         """
         Update one or more attributes of an administrator.
